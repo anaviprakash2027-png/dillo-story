@@ -27,3 +27,26 @@ p {
 a {
     /* blue */     color: rgb(80, 130, 180);
 }
+
+
+/*flexbox*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;/* may delete */
+    align-content: center; /* may delete */
+    background-color: rgb(80, 130, 180);
+}
+
+/* orientation */
+@media (orientation: portrait) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+@media (orientation: landscape) {
+    .flex-container {
+        flex-direction: row;
+    }
+}
