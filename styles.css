@@ -1,0 +1,29 @@
+body {
+/* Off-White */     background-color: rgb(230, 210, 200);
+/* Black */         color: rgb(0, 0, 0);
+/* Red */           color: rgb(130, 20, 20);
+/* Blue */          color: rgb(80, 130, 180);
+/* White */         color: rgb(255, 255, 255);
+}
+
+/* The above colors are used in the following elements: */
+
+h1 {
+    /* Red */           color: rgb(130, 20, 20);
+}
+
+h2 {
+    /* Blue */          color: rgb(80, 130, 180);
+}
+
+h3 {
+    /* Black */     color: rgb(0, 0, 0); 
+}
+
+p {
+    /* Black */     color: rgb(0, 0, 0);
+}
+
+a {
+    /* blue */     color: rgb(80, 130, 180);
+}
