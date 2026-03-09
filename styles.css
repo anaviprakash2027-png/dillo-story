@@ -118,13 +118,6 @@ a {
     }
 }
 
-
-/* CONTENT AREA */
-#content {
-    padding-bottom: 20px;
-    width: 100%;
-}
-
 /* PROGRESS BAR */
 #progress-bar {
     position: fixed;
@@ -137,7 +130,14 @@ a {
     z-index: 9999;
 }
 
-/* STORY TEXT */
+/* SCROLLYTELLY STYLES */
+/* SCROLLYTELLY: content */
+#content {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* SCROLLYTELLY: story text */
 #story {
     line-height: 1.2em;
 }
@@ -146,14 +146,14 @@ a {
     margin-bottom: 1em;
 }
 
-/* LINKS */
+/* SCROLLYTELLY: story links */
 a {
     color: black;
     text-decoration: none;
     border-bottom: 1px solid currentColor;
 }
 
-/* STEP BOX TYPOGRAPHY */
+/* SCROLLYTELLY: story title */
 .story_title {
     font-size: 30px;
     font-weight: 700;
@@ -163,6 +163,7 @@ a {
     color: black;
 }
 
+/* SCROLLYTELLY: story description */
 .story_description {
     font-size: 1.1rem;
     font-weight: 300;
@@ -170,11 +171,17 @@ a {
     margin-bottom: 0.75rem;
 }
 
-/* SCROLLAMA LAYOUT */
+/* SCROLLYTELLY: scroll layout */
 #scroll {
     margin-left: 0;
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+    margin-left: 0;
+    position: relative;
 }
 
+/* SCROLLYTELLY: story text box (left) */
 article {
     width: 100%;
     margin: 0;
@@ -185,61 +192,63 @@ article {
     flex: 0 0 50%;
 }
 
-/* STEP BOXES */
+/* SCROLLYTELLY: story step text (left) */
 .step {
     padding: 1rem;
     box-sizing: border-box;
     border: 1px solid black;
     border-radius: 8px;
     background-color: white;
-    margin-bottom: 2rem;   /* restores spacing between steps */
+    margin-bottom: 2rem;
     height: auto;
     min-height: 400px;
     padding-top: 5vh;
 }
 
+/* SCROLLYTELLY: story step media (right) */
 .scrolly-media {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
+/* SCROLLYTELLY: active step */
 .step.is-active {
     border: 4px solid black;
     background-color: #5082B4;
 }
 
 .step p {
-    font-family: inherit;   /* uses the same font as body */
-    font-size: inherit;     /* uses the same size as body */
-    line-height: inherit;   /* uses the same line-height as body */
-    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
     padding: 0.25rem 0;
 }
 
-/* FIGURE / MEDIA */
+/* SCROLLYTELLY: story media box (right) */
 figure {
     position: sticky;
     top: 20vh;
     width: 100%;
     background-color: #5082B4;
     border: 4px solid black;
-    padding: 0.75rem;        /* small but still matches left boxes */
+    padding: 0.75rem;
     box-sizing: border-box;
     border-radius: 4px;
     overflow: hidden;
-    /* CENTER CHILDREN */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;
 }
 
+/* SCROLLYTELLY: story media box (right) */
 #figure-column {
     flex: 0 0 50%;
-    align-self: stretch;   /* prevents shrinking */
+    align-self: stretch;
 }
 
+/* SCROLLYTELLY: story media box (right) */
 #scrolly-media-container {
     width: 100%;
     height: 100%;
@@ -248,12 +257,12 @@ figure {
     align-items: center;
 }
 
-
+/* SCROLLYTELLY: story media box (right) */
 .scrolly-media,
 #scrolly-figure img,
 #scrolly-figure iframe {
     width: 100%;
     height: 100%;
-    object-fit: contain;   /* fills the figure box without cropping */
+    object-fit: contain;
     display: block;
 }
