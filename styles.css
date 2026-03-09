@@ -5,9 +5,10 @@ body {
 /* Blue */          color: rgb(80, 130, 180);
 /* White */         color: rgb(255, 255, 255);
  /*formatting standard*/
-width: 50%;
- margin: auto;     
- padding: 10px;
+width: 70%;
+ margin: 0 auto;  
+ max-width: 1400px;   
+ padding: 40px 60px;
    line-height: 1.6; 
    font-family: 'Inter', sans-serif; 
     margin-top: 40px;
@@ -115,4 +116,144 @@ a {
     .flex-container {
         flex-direction: row;
     }
+}
+
+
+/* CONTENT AREA */
+#content {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* PROGRESS BAR */
+#progress-bar {
+    position: fixed;
+    right: 20px;
+    top: 50px;
+    width: 8px;
+    height: 0;
+    background-color: #5082B4;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+/* STORY TEXT */
+#story {
+    line-height: 1.2em;
+}
+
+#story p {
+    margin-bottom: 1em;
+}
+
+/* LINKS */
+a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+}
+
+/* STEP BOX TYPOGRAPHY */
+.story_title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+    color: black;
+}
+
+.story_description {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.45;
+    margin-bottom: 0.75rem;
+}
+
+/* SCROLLAMA LAYOUT */
+#scroll {
+    margin-left: 0;
+}
+
+article {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 50%;
+}
+
+/* STEP BOXES */
+.step {
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 2rem;   /* restores spacing between steps */
+    height: auto;
+    min-height: 400px;
+    padding-top: 5vh;
+}
+
+.scrolly-media {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.step.is-active {
+    border: 4px solid black;
+    background-color: #5082B4;
+}
+
+.step p {
+    font-family: inherit;   /* uses the same font as body */
+    font-size: inherit;     /* uses the same size as body */
+    line-height: inherit;   /* uses the same line-height as body */
+    margin: 0;
+    padding: 0.25rem 0;
+}
+
+/* FIGURE / MEDIA */
+figure {
+    position: sticky;
+    top: 20vh;
+    width: 100%;
+    background-color: #5082B4;
+    border: 4px solid black;
+    padding: 0.75rem;        /* small but still matches left boxes */
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+    /* CENTER CHILDREN */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+}
+
+#figure-column {
+    flex: 0 0 50%;
+    align-self: stretch;   /* prevents shrinking */
+}
+
+#scrolly-media-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.scrolly-media,
+#scrolly-figure img,
+#scrolly-figure iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   /* fills the figure box without cropping */
+    display: block;
 }
