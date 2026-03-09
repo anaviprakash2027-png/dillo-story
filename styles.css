@@ -54,11 +54,62 @@ a {
     background-color: rgb(80, 130, 180);
 }
 
+.navbar { /* style for nav bar, including colors and padding; adopted from sample code */
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: rgb(80, 130, 180);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-buttons { /* nav bar buttons format; adopted from sample code */
+  display: flex;
+  gap: 1em;
+}
+
+.nav-item { /* each button text */
+  padding: 0.5em 1em;
+  color: black;
+  text-decoration: none;
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+.hamburger { /* don't display the hamburger on the desktop pages */
+  display: none;
+}
+
 /* orientation */
 @media (orientation: portrait) {
     .flex-container {
         flex-direction: column;
     }
+
+     .nav-buttons { /* don't show buttons on the nav bar */
+    display: none;
+  }
+  .nav-buttons.active { /* show the nav buttons in a column */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgb(80, 130, 180);
+    padding: 1em;
+  }
+
+   body { /* change the body width to fill the screen more */
+    width: 90%;
+    font-size: 2em;
+ }
+
+ .hamburger { /* show hamburger menu */
+  display: block;
+}
 }
 @media (orientation: landscape) {
     .flex-container {

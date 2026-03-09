@@ -4,7 +4,24 @@
 </head>
 
 <body>
-<h1>Dillo Day: The Who, What, and Why of Northwestern’s Biggest Day of The Year</h1> 
+
+<div class="navbar">  <!-- header navigation buttons -->
+    <div class="nav-buttons"> <!-- link each page to a button -->
+      <a href="#home" class="nav-item">Top of story</a>
+      <a href="#performers" class="nav-item">Dillo Day performers</a>
+      <a href="#production" class="nav-item">Behind the scenes</a>
+    </div> <!-- close nav-buttons -->
+
+      <div class="nav-item hamburger">☰</div> <!-- show hamburger as nav bar menu -->
+  </div> <!-- close nav bar -->
+
+    <script> /* javascript to activiate hamburger menu */ 
+    document.querySelector('.hamburger').onclick = () => {
+      document.querySelector('.nav-buttons').classList.toggle('active')
+    }
+    </script> 
+
+<h1 id="home">Dillo Day: The Who, What, and Why of Northwestern’s Biggest Day of The Year</h1> 
 <p class="byline"> Story by: Anavi Prakash, Zack Siegel, Maiya Wahl, Nejma Reza, Bernarda Malevska </p>
 
 <p>Come May 16, about 10,000 attendees will swarm Northwestern University’s Lakefill for the most anticipated event of the academic year: Dillo Day.</p>
@@ -30,7 +47,7 @@
 
 <!--[interview + audio portion] -->
 
-<h2>Performers range in genre, hometown</h2>
+<h2 id="performers">Performers range in genre, hometown</h2>
 
 <p>Dillo Day has seen over 100 artists in the last 25 years, performing everything from Rock to K-Pop. While deliberating which artists to feature in each year’s festival, Mayfest puts out artist polls for Northwestern students to fill out.</p>
 
@@ -53,7 +70,7 @@
 
 <p>Since 2016, Mayfest has also hosted competitions for student performers leading up to Dillo Day. Both the winners of Battle of the Bands and Battle of the DJs get to showcase their art on the music festival’s Main Stage on the big day. The 2025 winners were Interia and Perlmutter, respectively.</p>
 
-<h2>Production work engages 10 committees, around 100 members</h2>
+<h2 id="production">Production work engages 10 committees, around 100 members</h2>
 
 <p>Mayfest oversees 10 committees that focus on every aspect of putting the music festival together. From booking acts to building the Dillo Day app, everything is student-run. Applications to join come out in September to allow the group almost an entire school year to prepare for the music festival. Roughly 100 students partake in the initiative.</p>
 
