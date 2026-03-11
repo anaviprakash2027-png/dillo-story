@@ -266,3 +266,22 @@ figure {
     object-fit: contain;
     display: block;
 }
+
+/* center audio embeds */
+.audio {
+    margin-left: 30%;
+    margin-right: 30%
+}
+
+/* make transcript dropdown */
+details{
+    width: 100%;
+    background-color:rgb(130, 20, 20);
+    font-style: italic;  
+}
+
+/* style transcript text */
+.transcript{
+    color: white;
+    font-size: 0.85em;
+}
